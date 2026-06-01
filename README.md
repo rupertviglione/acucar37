@@ -6,12 +6,13 @@ O projecto foi criado para publicação directa no GitHub Pages, sem backend, fr
 
 ## Ficheiros
 
-- `index.html` — estrutura semântica, SEO, Open Graph e dados estruturados Schema.org.
-- `style.css` — estilos responsivos, paleta visual, acessibilidade e layout.
+- `index.html` — estrutura semântica, SEO, Open Graph, logótipo e dados estruturados Schema.org.
+- `style.css` — estilos responsivos, paleta visual inspirada no logótipo, acessibilidade e layout.
 - `script.js` — selector de idioma PT / EN, menu mobile e ano automático no rodapé.
 - `sitemap.xml` — mapa do site para motores de pesquisa.
 - `robots.txt` — instruções básicas de indexação.
 - `README.md` — instruções de manutenção e publicação.
+- `assets/logo.svg` — versão vectorial leve do logótipo, preparada para GitHub Pages.
 
 ## Publicação no GitHub Pages
 
@@ -41,20 +42,20 @@ O site está preparado para `https://acucar37.pt/`. Se for usado outro domínio:
 4. Configurar o domínio em **Settings** → **Pages** → **Custom domain**.
 5. Criar os registos DNS indicados pelo GitHub Pages.
 
-## Substituição do logótipo
+## Logótipo e identidade visual
 
-Enquanto o logótipo final não existir, o cabeçalho usa uma marca tipográfica com o texto `AÇÚCAR 37`.
+O site usa `assets/logo.svg`, uma versão vectorial leve inspirada no logótipo fornecido: fundo terracota, moldura preta irregular e lettering creme de alto impacto. A paleta do website foi ajustada para coincidir com esta identidade visual.
 
-Quando o ficheiro oficial estiver disponível:
+Para substituir por um ficheiro oficial final:
 
-1. Criar a pasta `assets/` na raiz do projecto.
-2. Colocar o ficheiro, por exemplo `assets/logo.svg` ou `assets/logo.png`.
-3. Em `index.html`, substituir o bloco da marca dentro de `<a class="brand">` por:
-
-```html
-<img src="assets/logo.svg" alt="AÇÚCAR 37" width="160" height="48">
-```
-
+1. Manter a pasta `assets/` na raiz do projecto.
+2. Substituir `assets/logo.svg` pelo SVG final ou colocar `assets/logo.png`.
+3. Se o nome do ficheiro mudar, actualizar em `index.html`:
+   - `link rel="icon"`
+   - `link rel="preload"`
+   - imagem do cabeçalho (`.brand-logo`)
+   - imagem do hero (`.hero-logo`)
+   - `og:image`, `twitter:image`, `logo` e `image` nos dados estruturados
 4. Ajustar dimensões no CSS, se necessário.
 
 ## Editar textos e traduções

@@ -8,7 +8,7 @@
   <meta name="keywords" content="AÇÚCAR 37, cooperativa cultural, organização sem fins lucrativos, Lisboa, cultura, artes, Rua do Açúcar 37">
   <meta name="author" content="AÇÚCAR 37 - Cooperativa de Atividades Culturais, CRL">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f4efe7">
+  <meta name="theme-color" content="#8f3f2d">
   <meta name="language" content="Portuguese, English">
   <meta name="geo.region" content="PT-11">
   <meta name="geo.placename" content="Lisboa">
@@ -25,12 +25,17 @@
   <meta property="og:title" content="AÇÚCAR 37 — Cooperativa de Atividades Culturais">
   <meta property="og:description" content="Cooperativa cultural portuguesa sem fins lucrativos sediada em Lisboa.">
   <meta property="og:url" content="https://acucar37.pt/">
+  <meta property="og:image" content="https://acucar37.pt/assets/logo.svg">
+  <meta property="og:image:alt" content="Logótipo AÇÚCAR 37">
   <meta property="og:locale" content="pt_PT">
   <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AÇÚCAR 37 — Cooperativa de Atividades Culturais">
   <meta name="twitter:description" content="Cooperativa cultural portuguesa sem fins lucrativos sediada em Lisboa.">
+  <meta name="twitter:image" content="https://acucar37.pt/assets/logo.svg">
 
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/logo.svg" as="image" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
@@ -40,6 +45,8 @@
     "name": "AÇÚCAR 37 - Cooperativa de Atividades Culturais, CRL",
     "alternateName": "AÇÚCAR 37",
     "url": "https://acucar37.pt/",
+    "logo": "https://acucar37.pt/assets/logo.svg",
+    "image": "https://acucar37.pt/assets/logo.svg",
     "email": "geral@acucar37.pt",
     "taxID": "PT518910130",
     "nonprofitStatus": "NonprofitType",
@@ -64,8 +71,7 @@
   <header class="site-header" aria-label="Cabeçalho principal">
     <div class="container header-inner">
       <a class="brand" href="#topo" aria-label="AÇÚCAR 37 página inicial">
-        <!-- Substituir este bloco por <img src="assets/logo.svg" alt="AÇÚCAR 37"> quando o logótipo oficial estiver disponível. -->
-        <span class="brand-mark" aria-hidden="true">A37</span>
+        <img class="brand-logo" src="assets/logo.svg" alt="AÇÚCAR 37" width="72" height="72">
         <span class="brand-text">AÇÚCAR 37</span>
       </a>
 
@@ -100,13 +106,16 @@
           <a class="button" href="#contactos" data-i18n="heroButton">Contactar</a>
         </div>
         <aside class="hero-card" aria-label="Resumo institucional">
-          <span class="card-kicker" data-i18n="heroCardKicker">Informação verificada</span>
-          <strong data-i18n="heroCardTitle">Entidade cultural sem fins lucrativos</strong>
-          <dl>
-            <div><dt data-i18n="labelTaxShort">NIF</dt><dd>518910130</dd></div>
-            <div><dt data-i18n="labelLocationShort">Localização</dt><dd data-i18n="locationLisbon">Lisboa, Portugal</dd></div>
-            <div><dt data-i18n="labelSector">Sector</dt><dd data-i18n="sectorCulture">Cultura</dd></div>
-          </dl>
+          <img class="hero-logo" src="assets/logo.svg" alt="Logótipo AÇÚCAR 37" width="520" height="520">
+          <div class="hero-card-content">
+            <span class="card-kicker" data-i18n="heroCardKicker">Informação verificada</span>
+            <strong data-i18n="heroCardTitle">Entidade cultural sem fins lucrativos</strong>
+            <dl>
+              <div><dt data-i18n="labelTaxShort">NIF</dt><dd>518910130</dd></div>
+              <div><dt data-i18n="labelLocationShort">Localização</dt><dd data-i18n="locationLisbon">Lisboa, Portugal</dd></div>
+              <div><dt data-i18n="labelSector">Sector</dt><dd data-i18n="sectorCulture">Cultura</dd></div>
+            </dl>
+          </div>
         </aside>
       </div>
     </section>
