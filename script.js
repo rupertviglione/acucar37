@@ -19,7 +19,6 @@ const translations = {
     heroSubtitle: "Cooperativa de Atividades Culturais",
     heroText: "A Açúcar 37 é uma cooperativa cultural sem fins lucrativos sediada em Lisboa, dedicada à programação, criação, acolhimento e desenvolvimento de projectos artísticos e culturais.",
     heroButton: "Contactar",
-    heroCardKicker: "Informação verificada",
     heroCardTitle: "Entidade cultural sem fins lucrativos",
     labelTaxShort: "NIF",
     labelLocationShort: "Localização",
@@ -61,10 +60,6 @@ const translations = {
     contactLabel: "Contactos",
     contactTitle: "Fale connosco",
     contactIntro: "Para assuntos institucionais, programação cultural, parcerias ou documentação, contacte a cooperativa através do email oficial.",
-    socialInstagram: "Instagram",
-    socialFacebook: "Facebook",
-    socialYoutube: "YouTube",
-    socialLinkedin: "LinkedIn",
     footerTax: "NIF"
   },
   en: {
@@ -83,7 +78,6 @@ const translations = {
     heroSubtitle: "Cultural Activities Cooperative",
     heroText: "Açúcar 37 is a non-profit cultural cooperative based in Lisbon, dedicated to cultural programming, artistic creation, hosting and development of cultural projects.",
     heroButton: "Contact",
-    heroCardKicker: "Verified information",
     heroCardTitle: "Non-profit cultural organisation",
     labelTaxShort: "Tax No.",
     labelLocationShort: "Location",
@@ -125,10 +119,6 @@ const translations = {
     contactLabel: "Contact",
     contactTitle: "Get in touch",
     contactIntro: "For institutional matters, cultural programming, partnerships or documentation, contact the cooperative through the official email address.",
-    socialInstagram: "Instagram",
-    socialFacebook: "Facebook",
-    socialYoutube: "YouTube",
-    socialLinkedin: "LinkedIn",
     footerTax: "Tax No."
   }
 };

@@ -4,6 +4,8 @@ Website estático bilingue (Português / Inglês) para **AÇÚCAR 37 - Cooperati
 
 O projecto foi criado para publicação directa no GitHub Pages, sem backend, frameworks ou dependências obrigatórias. O objectivo é apresentar a cooperativa de forma clara, institucional e transparente, incluindo informação útil para processos de validação de organizações sem fins lucrativos.
 
+> Nota: o ficheiro `assets/logo.svg` preserva exactamente o logótipo fornecido. Não deve ser redesenhado, recriado ou substituído por uma aproximação visual.
+
 ## Ficheiros
 
 - `index.html` — estrutura semântica, SEO, Open Graph, logótipo e dados estruturados Schema.org.
@@ -12,7 +14,12 @@ O projecto foi criado para publicação directa no GitHub Pages, sem backend, fr
 - `sitemap.xml` — mapa do site para motores de pesquisa.
 - `robots.txt` — instruções básicas de indexação.
 - `README.md` — instruções de manutenção e publicação.
-- `assets/logo.svg` — versão vectorial leve do logótipo, preparada para GitHub Pages.
+- `assets/logo.svg` — logótipo original fornecido, embebido num SVG textual sem alterações de design.
+
+
+### Nota sobre ficheiros binários
+
+Alguns fluxos de criação de PR não aceitam ficheiros binários. Por isso, o logótipo original foi embebido em `assets/logo.svg` como SVG textual com uma imagem PNG em Base64. Isto mantém o desenho visual fornecido sem recriação, mas evita adicionar um ficheiro binário ao repositório.
 
 ## Publicação no GitHub Pages
 
@@ -44,17 +51,16 @@ O site está preparado para `https://acucar37.pt/`. Se for usado outro domínio:
 
 ## Logótipo e identidade visual
 
-O site usa `assets/logo.svg`, uma versão vectorial leve inspirada no logótipo fornecido: fundo terracota, moldura preta irregular e lettering creme de alto impacto. A paleta do website foi ajustada para coincidir com esta identidade visual.
+O site usa `assets/logo.svg`, o logótipo fornecido embebido num SVG textual, sem alterações de design. A paleta do website foi ajustada para conviver com o fundo terracota, a moldura preta e o lettering creme do logótipo.
 
 Para substituir por um ficheiro oficial final:
 
 1. Manter a pasta `assets/` na raiz do projecto.
-2. Substituir `assets/logo.svg` pelo SVG final ou colocar `assets/logo.png`.
+2. Substituir `assets/logo.svg` por uma versão oficial optimizada em formato textual, mantendo o mesmo design.
 3. Se o nome do ficheiro mudar, actualizar em `index.html`:
    - `link rel="icon"`
    - `link rel="preload"`
    - imagem do cabeçalho (`.brand-logo`)
-   - imagem do hero (`.hero-logo`)
    - `og:image`, `twitter:image`, `logo` e `image` nos dados estruturados
 4. Ajustar dimensões no CSS, se necessário.
 
@@ -82,7 +88,7 @@ translations.en.novoTexto = "Text in English";
 
 ## Redes sociais
 
-Os links de Instagram, Facebook, YouTube e LinkedIn estão preparados no rodapé da secção de contactos. Substituir `href="#"` pelos URLs oficiais quando estiverem disponíveis.
+Os botões de Instagram, Facebook, YouTube e LinkedIn estão ocultos enquanto não existirem perfis oficiais publicados. Quando os perfis forem criados, adicionar as ligações oficiais na secção `#contactos` de `index.html`.
 
 ## Documentos institucionais
 
