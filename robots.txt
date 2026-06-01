@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acucar37.pt/sitemap.xml
